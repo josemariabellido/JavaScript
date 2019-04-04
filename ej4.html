@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        var numero1 = prompt("Primer numero: ");
+        var numero2 = prompt("Segundo numero: ");
+        var suma = parseInt(numero1) + parseInt(numero2);
+        $("#suma").html(numero1 + "+" + numero2 + "=" + suma);
+        var resta = numero1 - numero2;
+        $("#resta").html(numero1 + "-" + numero2 + "=" + resta);
+         var division = numero1 / numero2;
+         $("#division").html(numero1 + "/" + numero2 + "=" + division);
+
+        var multiplicacion = numero1 * numero2;
+        $("#multiplicacion").html(numero1 + "*" + numero2 + "=" + multiplicacion);
+
+
+
+
+    });
+    
+    
+    
+    
+    
+    
+    
+    </script>
+</head>
+<body>
+    <p id="suma"></p>
+    <p id="resta"></p>
+
+    <p id="multiplicacion"></p>
+    <p id="division"></p>
+
+    
+</body>
+</html>
