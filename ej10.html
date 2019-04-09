@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+         var nota1 = prompt("Introduce primera nota: ");
+         var nota2 = prompt("Introduce segunda nota: ");
+         var nota3 = prompt("Introduce tercera nota: ");
+         var suma = parseInt(nota1)+ parseInt(nota2)+ parseInt(nota3);
+         var media = suma / 3;
+         var parciales = media * (55/100);
+         var examenfinal = prompt("La nota del examen final es: ");
+         var final = examenfinal * (30/100);
+         var trabajofinal = prompt("La nota del tranajo final es: ");
+         var trabfinal = trabajofinal * (15/100);
+         var total = parciales + final + trabfinal;
+         $(".parcial").html("La media del parcial sobre 55% es: " + parciales);
+          $(".examfinal").html("La media del examen final sobre el 30% es: " + final);
+          $(".trabajofinal").html("La media del trabajo final sobre el 15% es: " + trabfinal);
+          $(".total").html("LA NOTA TOTAL DE TODO ES: " + total);
+        });
+  
+      
+      
+      
+      
+      
+      
+      
+      
+      </script>
+</head>
+<body>
+    <p class="parcial"></p>
+    <p class="examfinal"></p>
+    <p class="trabajofinal"></p>
+    <h2 class="total"></h2>
+
+
+</body>
+</html>
