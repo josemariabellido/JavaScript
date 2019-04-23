@@ -5,23 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-     $(document).ready(function() {
-        var numero = prompt("Escribe el numero: ");
-        var decenas = parseInt (numero/10);
-        var unidades = numero % 10;
-        var inverso = (unidades * 10) + decenas;
-        $(".inverso").html("El numero inverso es: " + inverso);
+      $(document).ready(function() {
+        var x1 = prompt ("Escribir x1: ");
+        var y1 = prompt ("Escribir y1: ");
+        var x2 = prompt ("Escribir x2: ");
+        var y2 = prompt ("Escribir x2: ");
+
+        var distancia = Math.sqrt(((y2-y1)*(y2-y1))+((x2-x1)*(x2-x1)));
+        $(".distancia").html("La distancia entre los puntos es " + distancia);
+
     });
     
     
     
     
+    
     </script>
-
 </head>
 <body>
-  <p class="inverso"></p>  
+    <p class="distancia"></p>
 </body>
 </html>
