@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var numero=0;
+            var numero1=prompt("Escriba un número");
+            var numero2=prompt("Escriba otro número");
+            $(".resultado1").html("Las variables introducidas al principio son: "+numero1+" y "+numero2);
+            numero=numero2;
+            numero2=numero1;
+            numero1=numero;
+            $(".resultado2").html("Las variables intercambiadas son: "+numero1+" y "+numero2);
+            
+        });
+    </script>
+</head>
+<body>
+    <p class="resultado1"></p>
+    <p class="resultado2"></p>
+</body>
+</html>
